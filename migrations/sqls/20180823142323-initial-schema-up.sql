@@ -25,6 +25,8 @@ CREATE TABLE menu_items(
    menu_id uuid REFERENCES menus(id)
 );
 
+CREATE INDEX idx_menu_menu_id ON menu_items (menu_id);
+
 CREATE TABLE restaurants(
    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
    name varchar(64),
@@ -33,6 +35,9 @@ CREATE TABLE restaurants(
    menu_id uuid REFERENCES menus(id)
 );
 
+CREATE INDEX idx_restaurants_menu_id ON restaurants (menu_id);
+CREATE INDEX idx_restaurants_address_id ON restaurants (address_id);
+
 CREATE TABLE reviews(
    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
    rating int,
@@ -40,3 +45,5 @@ CREATE TABLE reviews(
    created_at timestamp with time zone,
    restaurant_id uuid REFERENCES restaurants(id)
 );
+
+CREATE INDEX idx_reviews_restaurant_id ON reviews (restaurant_id);
