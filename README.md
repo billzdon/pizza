@@ -47,7 +47,7 @@ Sample:\
 		"multipleStatements": true
 	},
 	"sql-file" : true
-}
+}\
 Run db-migrate up after creating db
 
 Todo, more setup notes
