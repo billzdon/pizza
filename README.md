@@ -1,6 +1,6 @@
 # pizza
 
-Sample curls for api:\
+Sample curls for api (change base url to necessary ip):
 
 
 Create restaurant (returns id)\
@@ -28,13 +28,28 @@ curl --header "Content-Type: application/json"   --request GET   http://localhos
 
 For address find, it uses geocode.xyz api to get lat/lng and then pg query to match closest places.
 
-Setup:
+Setup:\
 Need postgres and uuid extension.\
+create extension if not exists "uuid-ossp";\
 Need .env file for database info\
 Sample:\
 DB_USERNAME=node\
 DB_PASSWORD=password\
 DB_NAME=pizza\
+Add database.json\
+Sample:\
+{
+  "dev": {
+  	"driver": "postgres",
+  	"user": "node",
+  	"password": "password",
+  	"host": "localhost",
+  	"database": "pizza",
+		"multipleStatements": true
+	},
+	"sql-file" : true
+}\
+Run db-migrate up after creating db (to install db-migrate: create extension if not exists "uuid-ossp";)
 
 Todo, more setup notes
 
