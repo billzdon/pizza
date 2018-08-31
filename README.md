@@ -1,6 +1,6 @@
 # pizza
 
-Sample curls for api:\
+Sample curls for api:
 
 
 Create restaurant (returns id)\
@@ -34,7 +34,7 @@ Need .env file for database info\
 Sample:\
 DB_USERNAME=node\
 DB_PASSWORD=password\
-DB_NAME=pizza\
+DB_NAME=pizza
 
 Todo, more setup notes
 
