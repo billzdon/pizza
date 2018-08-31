@@ -1,6 +1,6 @@
 # pizza
 
-Sample curls for api:
+Sample curls for api (change base url to necessary ip):
 
 
 Create restaurant (returns id)\
@@ -35,6 +35,19 @@ Sample:\
 DB_USERNAME=node\
 DB_PASSWORD=password\
 DB_NAME=pizza\
+Add database.json\
+Sample:\
+{
+  "dev": {
+  	"driver": "postgres",
+  	"user": "node",
+  	"password": "password",
+  	"host": "localhost",
+  	"database": "pizza",
+		"multipleStatements": true
+	},
+	"sql-file" : true
+}
 Run db-migrate up after creating db
 
 Todo, more setup notes
