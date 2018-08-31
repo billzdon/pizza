@@ -49,7 +49,7 @@ Sample:\
 	},
 	"sql-file" : true
 }\
-Run db-migrate up after creating db
+Run db-migrate up after creating db (to install db-migrate: create extension if not exists "uuid-ossp";)
 
 Todo, more setup notes
 
