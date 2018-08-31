@@ -37,3 +37,5 @@ DB_PASSWORD=password\
 DB_NAME=pizza\
 
 Todo, more setup notes
+
+Project is built with node & express
