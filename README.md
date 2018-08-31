@@ -30,6 +30,7 @@ For address find, it uses geocode.xyz api to get lat/lng and then pg query to ma
 
 Setup:\
 Need postgres and uuid extension.\
+create extension if not exists "uuid-ossp";\
 Need .env file for database info\
 Sample:\
 DB_USERNAME=node\
