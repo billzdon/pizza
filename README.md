@@ -28,13 +28,14 @@ curl --header "Content-Type: application/json"   --request GET   http://localhos
 
 For address find, it uses geocode.xyz api to get lat/lng and then pg query to match closest places.
 
-Setup:
+Setup:\
 Need postgres and uuid extension.\
 Need .env file for database info\
 Sample:\
 DB_USERNAME=node\
 DB_PASSWORD=password\
-DB_NAME=pizza
+DB_NAME=pizza\
+Run db-migrate up after creating db
 
 Todo, more setup notes
 
