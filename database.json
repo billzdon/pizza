@@ -1,0 +1,11 @@
+{
+  "dev": {
+  	"driver": "postgres",
+  	"user": "node",
+  	"password": "password",
+  	"host": "localhost",
+  	"database": "pizza",
+		"multipleStatements": true
+	},
+	"sql-file" : true
+}
