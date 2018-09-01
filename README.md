@@ -12,15 +12,15 @@ curl --header "Content-Type: application/json"   --request POST   --data '{"name
 
 
 Get restaurant with attached reviews/rating-score/menu\
-curl --header "Content-Type: application/json"   --request GET   http://18.222.189.92:8080/api/v1/restaurants/d4c4e76d-c37a-4969-bd63-ed27ad374793 
+curl --header "Content-Type: application/json"   --request GET   http://18.222.189.92:8080/api/v1/restaurants/35853a46-5df4-4db8-94dc-a2c0cc82ea7b 
 
 
 Create Review\
-curl --header "Content-Type: application/json"   --request POST   --data '{"description":"great", "rating":5.0, "restaurant_id":"d4c4e76d-c37a-4969-bd63-ed27ad374793"}'   http://18.222.189.92:8080/api/v1/reviews 
+curl --header "Content-Type: application/json"   --request POST   --data '{"description":"great", "rating":5.0, "restaurant_id":"35853a46-5df4-4db8-94dc-a2c0cc82ea7b"}'   http://18.222.189.92:8080/api/v1/reviews 
 
 
 Get Reviews\
-curl --header "Content-Type: application/json"   --request GET   http://18.222.189.92:8080/api/v1/restaurants/d4c4e76d-c37a-4969-bd63-ed27ad374793/reviews 
+curl --header "Content-Type: application/json"   --request GET   http://18.222.189.92:8080/api/v1/restaurants/35853a46-5df4-4db8-94dc-a2c0cc82ea7b/reviews 
 
 
 Find by address (can be anything in USA)\
